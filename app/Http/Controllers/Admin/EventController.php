@@ -52,24 +52,22 @@ class EventController extends Controller
 
     public function store(Request $request): JsonResponse
     {
-        $file = $request->file('excle');
-
-        Excel::import(new ExcelImport, $file);
-        dd('Wait');
-        print 'he;llo';
+//        $file = $request->file('excle');
+//
+//        Excel::import(new ExcelImport, $file);
+//        dd('Wait');
+//        print 'he;llo';
 
         if ((int)$request['edit_value'] === 0) {
             $event = new Event();
-            $event->name = $request['name'];
-            $event->currency = $request['currency'];
+            $event->title = $request['name'];
             $event->save();
 
             return response()->json(['message' => trans('messages.event_added_successfully')]);
         }
 
         $event = Event::find($request['edit_value']);
-        $event->name = $request['name'];
-        $event->currency = $request['currency'];
+        $event->title = $request['name'];
         $event->save();
 
         return response()->json(['message' => trans('messages.event_updated_successfully')]);

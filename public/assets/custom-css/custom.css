@@ -1,0 +1,34 @@
+.form-control:focus {
+    border-color: #9C27B0 !important;
+    background-color: #dd83bc70 !important;
+}
+.choices[data-type*=select-one] .choices__input{
+    border-color: #9C27B0 !important;
+    background-color: #dd83bc70 !important;
+}
+.choices__inner:focus{
+    border-color: #9C27B0 !important;
+    background-color: #dd83bc70 !important;
+}
+
+.choices:focus {
+    border-color: #9C27B0 !important;
+    background-color: #dd83bc70 !important;
+}
+ .form-select:focus {
+    border-color: #9C27B0 !important;
+    background-color: #dd83bc70 !important;
+}
+.choices__inner:focus{
+    border-color: #9C27B0 !important;
+    background-color: #dd83bc70 !important;
+}
+.is-focused .choices__inner, .is-open .choices__inner{
+    border-color: #9C27B0 !important;
+    background-color: #dd83bc70 !important;
+}
+
+.choices__inner .choices__input:focus{
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
